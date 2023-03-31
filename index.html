@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale1.0">
+	<title>Front-End Essencial</title>
+	<style type="text/css">	
+ 
+		*{
+			margin: 0;
+			border: 0;
+			padding: 0;
+ 
+		}	
+		html{
+			font-size: 62.5%;
+ 
+		}
+		header{
+			font-family: arial;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.25);     	
+			   width: 100%;
+			   position: fixed;
+			 border-radius: 10px;   	
+	   }
+		 h3{
+			 font-size: 2.0rem;
+			 font-family: arial;
+			 text-align: center;
+			 margin: 0;
+			 padding: 4px;
+			 border-radius: auto;
+		 }
+		 h4{
+			 font-size: 2.0rem;
+			 font-family: arial;
+			 text-align: center;
+			 margin: 0;
+			 padding-left: 5px;
+			 padding-bottom: 5px;
+		 }
+		 body{
+			 background-image: url("img/Imagem1.jpg");
+			 background-repeat: no-repeat;
+			 background-size: cover;
+			 background-position: center;	 
+				 
+		 }
+		 .conteiner{
+			 display: block;       	
+			 background-color: rgba(0, 0, 0, 0.541);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;
+			 width:95%;               	
+			 margin: auto;
+			 max-width: 90%;
+			 max-height: 90%;
+			 min-width: 0;
+			 min-height: 0;
+			 border-radius: 10px;             	
+ 
+		 }
+		 footer{
+			 font-family: arial;
+			 background-color: rgba(0, 0, 0, 0.7);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;       
+			 text-align: center;
+			 padding-top: 5px;
+			 padding-bottom: 5px;
+			 border-radius: 10px;
+			 display: block;       	
+			 width:95%;        	       	
+			 margin: auto;
+			 max-width: 90%;
+			 max-height: 90%;
+			 min-width: 0;
+			 min-height: 0;
+			 border-radius: 10px;		  
+ 
+		   }
+		 p{
+			 font-family: arial;
+			 text-align: justify;
+			 padding: 10px;
+			 font-size: 1.6rem;
+		 }        
+		 h1{
+			 font-family: arial;
+			 text-align: center;
+			 padding-top: 10px;
+			 font-size: 1.9rem;
+			 margin-top: 8%;
+		 }
+		 h2{
+			 font-family: arial;
+			 text-align: center;
+			 padding-top: 10px;
+			 font-size: 1.5rem;
+		 }
+		 .texto-footer{
+			 font-family: arial;
+			 text-align: center;
+			 padding: 10px;
+			 font-size: 1.6rem;
+		 }
+		 .compre{
+			 background-color: rgba(0, 0, 0, 0.541);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;      	
+			 text-align: center;
+			 width: 150px;
+			 height: 100px;
+			 position:fixed;
+			  right: 0;
+			  margin-top: 5%;
+			  z-index: 1;
+		 }
+		 h5{
+			 font-family: arial;
+			 text-align: center;
+			 padding: 1px;
+			 font-size: 1.9rem;
+		 }
+		 button{
+			 font-family: arial;
+			 text-align: center;
+			 padding: 5px;
+			 font-size: 1.9rem;
+			 background-color: rgba(0, 0, 0, 0.541);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;
+			 border: 0.1px;
+			 border-radius: 10px;
+		 }
+		 #grid-conteiner{
+			 margin-top: 5px;
+			 background-color: rgba(0, 0, 0, 0.541);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;
+			 padding: 5px;			
+		 }
+		 .grid{
+			 display: grid;
+			 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			 grid-gap: 1px;
+			 max-width: 1200px;
+			 margin: 0 auto;
+			 
+			 
+		 }
+		 .grid div{
+			 background-color: rgba(0, 0, 0, 0.541);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;
+			 font-family: arial;
+			 text-align: center;
+			 font-size: 1.6rem;
+			 padding: 2px;
+		 }
+		 #formulario{
+			 background-color: rgba(0, 0, 0, 0.541);
+			 color: #fcfcfc;
+			 box-shadow: 2px 2px #63e2ff;
+			 font-family: arial;
+			 font-size: 1.6rem;
+			 padding-top: 10px;
+			 text-align: center;
+		 }
+		 .fomulario-contato{
+			 text-align: center;
+			 font-family: arial;
+		 }
+			 
+	 </style>
+	
+</head>
+<body> 	
+	<header>
+		<h3>Material de Estudo</h3>
+		<h4>FRONT-END Essencial</h4>
+
+	</header>
+
+
+	<div class="compre">
+		<h5>Compre agora mesmo seu Ebook</h5>
+		<button>COMPRAR</button>
+		
+	</div>
+
+   <br>
+	<section class="conteiner">
+		<h1>Análise e Desenvolvimento de Sistemas</h1>
+
+		<p>Uma visão geral sobre o processo de criação de softwares;
+	       entenda como é feita a análise e o desenvolvimento de sistemas e saiba como essa área pode ser promissora para sua carreira.</p>
+		<p>A área de Análise e Desenvolvimento de Sistemas tem se destacado cada vez mais no mercado de tecnologia, visto que a demanda por softwares e sistemas informatizados tem crescido exponencialmente nos últimos anos. Porém, muitas pessoas ainda desconhecem como funciona o processo de criação desses softwares, o que torna difícil compreender a importância da atuação dos profissionais da área.</p>
+
+		<p>Nesse contexto, o objetivo deste texto é fornecer uma visão geral sobre a Análise e Desenvolvimento de Sistemas, explicando as etapas do processo de criação de softwares, as competências necessárias para atuar na área e as oportunidades de carreira disponíveis.</p>
+		<br>
+	</section>
+	
+	<section class="conteiner">
+		<h1> Conceitos </h1>
+		<h2>ADS</h2>
+		<p> A Análise e Desenvolvimento de Sistemas é uma área que envolve o processo de criação de softwares, desde a concepção da ideia até a sua implantação e manutenção. Esse processo é composto por diversas etapas, como levantamento de requisitos, análise de viabilidade, desenvolvimento de protótipos, implementação, testes e manutenção.</p>
+
+
+			<p>Para atuar nessa área, é necessário possuir conhecimentos em programação, banco de dados, redes de computadores, engenharia de software, entre outras competências técnicas. Além disso, habilidades como pensamento crítico, resolução de problemas e trabalho em equipe são fundamentais para o sucesso na carreira.</p>
+			
+			
+			<p>O profissional de Análise e Desenvolvimento de Sistemas pode atuar em empresas de tecnologia, agências de desenvolvimento de software, instituições financeiras, entre outras organizações que possuem demanda por sistemas informatizados. As oportunidades de carreira incluem cargos como programador, analista de sistemas, arquiteto de software, gerente de projetos, entre outros.</p>
+			
+			
+			<p>A Análise e Desenvolvimento de Sistemas é uma área promissora para quem deseja atuar no mercado de tecnologia. Com o avanço da transformação digital, a demanda por softwares e sistemas informatizados tem crescido exponencialmente, o que gera uma grande oportunidade para os profissionais da área. Porém, é fundamental possuir as competências técnicas e habilidades necessárias para atuar com eficiência nesse processo de criação de softwares.</p>
+			<br>
+	</section>
+   <br>
+   <br>
+	<section class="conteiner" id="grid-conteiner">
+
+		<div class="grid"> 
+			<br>
+
+			<div> 1. Introdução à Análise e Desenvolvimento de Sistemas: Este tópico apresenta uma visão geral sobre a área de Análise e Desenvolvimento de Sistemas, seus conceitos básicos e sua importância no mundo da tecnologia.</div> 
+			<br>
+			<div>2. Desenvolvimento de software: Este tópico aborda os processos e metodologias utilizados para o desenvolvimento de software, como a metodologia ágil e as boas práticas de programação.</div>
+			<br>
+			<div>3. Banco de Dados: Neste tópico, são discutidos os conceitos básicos de bancos de dados, suas estruturas, bem como a modelagem de dados e a utilização de sistemas de gerenciamento de banco de dados.</div>
+			<br>
+			<div>4. Arquitetura de Sistemas: Este tópico aborda as decisões de arquitetura envolvidas no desenvolvimento de sistemas, como a escolha de tecnologias, a organização do código, a escalabilidade e a segurança.</div>
+			<br>
+			<div>5. Desenvolvimento de aplicativos móveis: Neste tópico, são abordados os conceitos e tecnologias necessários para o desenvolvimento de aplicativos móveis, incluindo frameworks, linguagens de programação, design de interfaces e integração com serviços web.</div>
+			<br>
+			<div>6. Gerenciamento de projetos: Este tópico apresenta técnicas e metodologias para o gerenciamento de projetos de desenvolvimento de software, incluindo a definição de escopo, gestão de tempo, gestão de custos e gestão de riscos.</div>
+
+		</div>	
+
+	</section>
+	<br><br>
+
+    <section class="conteiner" id="formulario">
+     
+      <h2>Selecione um Produto para mais Informações</h2>
+
+	  <form action="#" method="get" target="_blank">
+
+		<p class="fomrulario-contato">
+			
+         <label for="nome">Nome</label>
+			
+		<input type="text" id="nome" name="nome" placeholder=" Insira seu Nome">
+		</p>
+		
+		<p class="fomrulario-contato">
+			
+			<label for="nome">Contato</label>
+			   
+		   <input type="tel" id="tel" name="tel" placeholder=" Insira seu Tel com (DDD)">
+		   <br>
+
+		  <br>
+		   <input type="checkbox" id="opcoes" name="html" value="html">
+		   <label for="html"> Quero saber mais sobre HTML</label>
+		   <br>
+		   <input type="checkbox" id="opcoes" name="php" value="php">
+		   <label for="php">Quero saber mais sobre HMTL, CSS e PHP</label>
+		   <br>
+		   <input type="checkbox" id="opcoes" name="javascript" value="javascript">
+		   <label for="php">Quero saber mais sobre HTML, CSS e javascript</label>
+		   <br><br>
+		   <label for="mensagem">Deixei a sua Mensagem (opcional)</label>
+		   <br>
+		   <textarea id="mensagem" rows="5" cols="50" text-aling="justify"></textarea>
+		   <br>
+		   <br>
+
+		   <button class=" Enviar" > Enviar</button></br>
+	</p>
+        
+	  </form>
+
+	</section>
+   <br>
+
+   <br>
+
+	<footer>
+
+		<h3>Material de Estudo</h3>
+		<h4>Desenvolvimento Web</h4>
+		<br>
+
+		<p class="texto-footer">Contatos:</p>
+		<p class="texto-footer"> Email: <a href="https://marceelsilvaa@gmail.com"> Gmail </a></p>
+		<p class="texto-footer">Linkedin: <a href="https://www.linkedin.com/in/01marcel-silva/">Marcel Silva</a></p>
+		<p class="texto-footer">GitHub: <a href="https://www.github.com/MarcelSilva-Dev/">Marcel Silva Dev</a></p>
+		<p class="texto-footer">WhatsApp: <a href="https://wa.me/qr/V3Q3TEYSTA2OK1/"> Entre em contato</a></p>
+
+
+	</footer>
+
+</body>
+
+</html>
